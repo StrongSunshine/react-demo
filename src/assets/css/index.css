@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,6 +24,45 @@ code {
   height: 100px;
   pointer-events: none;
   animation: App-logo-spin infinite 20s linear;
+}
+
+.game_box {
+  width: 480px;
+  height: 360px;
+  margin: 0 auto;
+  background: #f0f0f0;
+}
+
+.game_box .history {
+  height: 360px;
+  overflow: hidden;
+  width: 120px;
+  float: right;
+}
+
+.game_box .info {
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 10px 0;
+}
+
+.game_box .history ol {
+  padding: 0;
+}
+
+.game_box .history li {
+  margin: 5px 0;
+  list-style: none;
+}
+
+button:focus {
+  outline: none
+}
+
+.player {
+  font-size: 16px;
+  font-weight: bolder;
+  color: #09f;
 }
 
 @media (prefers-reduced-motion: reduce) {
